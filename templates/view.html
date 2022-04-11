@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style4.css') }}">
+</head>
+<body>
+<nav class="nav">
+    <div class="nav1">
+    	<a class="r e" href="http://127.0.0.1:5000">Home</a>
+    		<a class="r" href="http://127.0.0.1:5000/order">Order</a>
+    		<a class="t r" href="http://127.0.0.1:5000/sold">Update Sold Stock</a>
+    		<a class="r" href="http://127.0.0.1:5000/view">View Current Stock</a>
+    		<a class="r" href="http://127.0.0.1:5000/history">history</a>
+    		<a class="r" href="http://127.0.0.1:5000/policy">Policy</a>
+    </div>
+</nav><br><br><br><br>
+<section>
+<center>
+	<h1 style="">Your Available stock</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Item</th><th>Frequency</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for x in p %}
+			{% if p[x]>0 %}
+				<tr><td>{{x}}</td><td>{{p[x]}}</td></tr>
+			{% endif %}
+		{% endfor %}
+	</tbody>
+
+</table>
+</center>
+</section>
+</body>
+</html>

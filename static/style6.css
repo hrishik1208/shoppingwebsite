@@ -1,0 +1,29 @@
+nav{
+        display: flex;
+        position: fixed;
+        background: linear-gradient(-90deg,#2a00ff,#356ec6,#2ae46e);
+        height: 45px;
+        margin-top: -10px;
+        width: 100%;
+        z-index: 9;
+      }
+  a.r{
+      padding: 10px;
+      color: white;
+      font-family: cursive;
+      font-size: 25px;
+      padding: 20px;
+      text-decoration: none;
+    }
+  a.e{
+      margin-left: 200px;
+    }
+  .fix{
+      width: 600px;
+     }
+    .bc{
+  width: 50%;
+    align-items: center;
+    margin-left: 22%;
+
+}

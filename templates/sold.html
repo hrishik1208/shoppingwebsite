@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+	<script src="static/utility.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style3.css') }}">
+  </head>
+  	<nav class="nav">
+    	<div class="nav1">
+    		<a class="r e" href="http://127.0.0.1:5000">Home</a>
+    		<a class="r" href="http://127.0.0.1:5000/order">Order</a>
+    		<a class="t r" href="http://127.0.0.1:5000/sold">Update Sold Stock</a>
+    		<a class="r" href="http://127.0.0.1:5000/view">View Current Stock</a>
+    		<a class="r" href="http://127.0.0.1:5000/history">history</a>
+    		<a class="r" href="http://127.0.0.1:5000/policy">Policy</a>
+    	</div>
+      </nav><br><br>
+  <div class="form-style-6">
+	<h1>Update The Sold Stock Here</h1><br><br><br>
+	<form style="width: 300px;" class="bc" name="my_form" method="POST">
+		<p style="color: #000066">Items &nbsp; <input style="width: 450px;" type="text" placeholder=" Enter items you sold today or Expired separated by comma" name = "List1"></p>
+			<p style="color: #000066">Frequency &nbsp; <input style="width: 450px;" type="text"  placeholder="Enter their respective quantities separated by comma"  name = "List2"></p> <br>
+	<center><input style="width: 200px; margin-left: 60px;" type="button"class="btn btn-sm" onclick="submitData('submitjSON')" value="Submit"></center><br>
+	</form>
+	<div class="row">
+    			<div class="col-md-8" align="Centre" style="background-color: yellow; margin-left: 200px; float:left; margin-top: 0.90cm;font-size: 25px;color: blue;" id="output_div">
+    			</div>
+    	</div>	
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+</body>
+</html>

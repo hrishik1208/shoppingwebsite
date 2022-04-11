@@ -1,0 +1,1 @@
+SHOPPING WEBSITE CREATED BY USING Python Flask, HTML, CSS , JAVACRIPT and simple text files to store the data

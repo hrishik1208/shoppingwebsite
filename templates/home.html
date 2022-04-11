@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  <script src="static/utility.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style1.css') }}">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav1">
+        
+        <a class="r e" href="http://127.0.0.1:5000">Home</a>
+        <a class="r" href="http://127.0.0.1:5000/order">Order</a>
+        <a class="t r" href="http://127.0.0.1:5000/sold">Update Sold Stock</a>
+        <a class="r" href="http://127.0.0.1:5000/view">View Current Stock</a>
+        <a class="r" href="http://127.0.0.1:5000/history">history</a>
+        <a class="r" href="http://127.0.0.1:5000/policy">Policy</a>
+
+      </div>
+    </nav><br><br>
+    <img width="1560" class="w3-image"  src="{{ url_for('static',filename='image/dd.jpg') }}">
+    <div style="margin-top: 5px;"  class="carousel" data-flickity='{"autoplay": true}'>
+      <div class="carousel-cell">
+        <img width="1560" class="w3-image"  src="{{ url_for('static',filename='image/f.png') }}">
+      </div>    
+      </div><br><br>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+</body>
+</html>

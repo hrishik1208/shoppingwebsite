@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+	<script src="static/utility.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style2.css')}}">
+  </head>
+  <body>
+
+
+  	<nav class="nav">
+    	<div class="nav1">
+    		<a class="r e" href="http://127.0.0.1:5000">Home</a>
+    		<a class="r" href="http://127.0.0.1:5000/order">Order</a>
+    		<a class="t r" href="http://127.0.0.1:5000/sold">Update Sold Stock</a>
+    		<a class="r" href="http://127.0.0.1:5000/view">View Current Stock</a>
+    		<a class="r" href="http://127.0.0.1:5000/history">history</a>
+    		<a class="r" href="http://127.0.0.1:5000/policy">Policy</a>
+
+    	</div>
+    </nav><br><br>
+    <div style="margin-top: 5px;"  class="carousel" data-flickity='{"autoplay": true}'>
+    	<div class="carousel-cell">
+    		<img  class="w3-image" width="1560px"  src="{{ url_for('static',filename='image/collage1.png') }}">
+    	</div>
+    	<div class="carousel-cell">
+    		<img  class="w3-image" width="1560px" src="{{ url_for('static',filename='image/collage2.png') }}">
+    	</div>
+    	<div class="carousel-cell">
+    		<img  class="w3-image" width="1560px"  src="{{ url_for('static',filename='image/collage3.png') }}">
+    	</div>
+    	<div class="carousel-cell">
+    		<img class="w3-image" width="1560px"  src="{{ url_for('static',filename='image/collage4.png') }}">
+    	</div>
+    </div><br><br>
+    <center><p style="color: red; font-size: 20px;">* All the wholesale prices mentioned are tentative. Actual prices may differ place by place </p></center>
+  <div class="form-style-6">
+	<h1>Order Here</h1><br><br><br>
+	<form style="width: 300px;" class="bc" name="my_form" method="POST">
+		<p style="color: #000066">Items &nbsp; <input style="width: 450px;" type="text" placeholder=" Enter items you want to order separated by comma" name = "list1"></p>
+			<p style="color: #000066">Frequency &nbsp; <input style="width: 450px;" type="text"  placeholder="Enter their respective quantities separated by comma"  name = "list2"></p> <br>
+	<center><input style="width: 200px; margin-left: 60px;" type="button"class="btn btn-sm" onclick="submitData('submitJSON')" value="Submit"></center><br>
+	</form>
+</div>
+<div style="background-color: yellow;" class="row">
+    			<div class="col-md-8" align="Centre" style="background-color: yellow; margin-left: 300px; float:left; margin-top: 0.90cm;font-size: 25px;color: blue;" id="output_div">
+    			</div>
+    	</div>
+</div><br><br><br><br><br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+</body>
+</html>
